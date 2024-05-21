@@ -1,0 +1,92 @@
+@import "./colores";
+/* NOTICIAS */
+.blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+    .blog-heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h1{
+            font-weight: 600;
+        }
+    }
+
+    .blog-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .blog-box {
+            width: 350px;
+            background-color: #fff;
+            border: 1px solid #ececec;
+            margin: 20px;
+            border-radius: 5px;
+
+            .blog-img {
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    border-radius: 0;
+                }
+            }
+
+            .blog-text {
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    color: $color-2;
+                    font-size: 0.9rem;
+                }
+
+                a {
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    color: $color-texto;
+                }
+                
+                a:hover {
+                    color: $color-2;
+                    transition: all ease 0.3s;
+                }
+
+                p {
+                    color: $color-texto;
+                    font-size: 0.9rem;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    margin: 20px 0px;
+                }
+                
+                .mas {
+                    color: $color-3;
+                }
+                
+                .mas:hover {
+                    color: $color-2;
+                    transition: all ease 0.3s;
+                }
+            }
+        }
+    }
+}

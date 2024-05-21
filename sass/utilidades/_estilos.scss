@@ -1,0 +1,71 @@
+@import "./colores";
+
+body {
+
+
+    u {
+        color: $color-1;
+    }
+
+    .col:hover {
+        background-color: $color-1;
+    }
+
+    h1 {
+        color: #990033;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+/* FOOTER */
+footer {
+    background-color: $color-3;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    overflow: auto;
+    flex-direction: column;
+    
+    p {
+        color: $color-4;
+    }
+
+    div {
+        width: 90%;
+        margin: 15px;
+        background-color: $color-3;
+
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin: 10px 5px;
+            flex-wrap: wrap;
+
+            li{
+                list-style: none;
+
+                a{
+                    color: $color-4;
+                    font-size: 35px;
+                    display: inline-block;
+                    margin: 0 10px;
+                    transition: 0.5s;
+                }
+
+                a:hover {
+                    transform: translateY(-10px);
+                }
+            }
+        }
+    }
+}

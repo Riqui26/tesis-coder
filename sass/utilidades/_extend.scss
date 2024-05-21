@@ -1,0 +1,37 @@
+@import "./colores";
+
+
+%formulario {
+    margin: 0;
+    padding: 1em;
+}
+
+.cform form {
+    @extend %formulario;
+}
+
+.cform form button {
+    @extend %formulario;
+    background: $color-1;
+    
+}
+
+%boton-imput-texta {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    border-bottom: 2px solid #990033;
+    outline: none;
+}
+
+.cform form button {
+    @extend %boton-imput-texta;
+}
+
+.cform form input {
+    @extend %boton-imput-texta;
+}
+
+.cform form textarea {
+    @extend %boton-imput-texta;
+}
